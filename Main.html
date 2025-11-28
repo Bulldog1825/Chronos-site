@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos - Luxury Timepieces</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="project.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#home">CHRONOS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#product">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fa-solid fa-cart-shopping"></i> Cart (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-subtitle">Premium Luxury Timepieces</div>
+            <div class="watch-showcase">
+                <div class="watch-container">
+                    <div class="watch-glow"></div>
+                    <div class="watch-3d scroll-animate-scale">
+                        <div class="watch">
+                            <div class="watch-case"></div>
+                            <div class="watch-bezel"></div>
+                            <div class="watch-face">
+                                <div class="watch-markers">
+                                    <div class="marker"></div>
+                                    <div class="marker"></div>
+                                    <div class="marker"></div>
+                                    <div class="marker"></div>
+                                    <div class="marker"></div>
+                                    <div class="marker"></div>
+                                    <div class="marker"></div>
+                                    <div class="marker"></div>
+                                    <div class="marker"></div>
+                                    <div class="marker"></div>
+                                    <div class="marker"></div>
+                                    <div class="marker"></div>
+                                </div>
+                                <div class="watch-hands">
+                                    <div class="hand hour-hand"></div>
+                                    <div class="hand minute-hand"></div>
+                                    <div class="hand second-hand"></div>
+                                </div>
+                                <div class="center-pin"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="hero-title">RESONANT</h1>
+            <p class="hero-description">Experience the pinnacle of Swiss horology combined with cutting-edge innovation. Every timepiece tells a story of precision, elegance, and timeless craftsmanship.</p>
+            <a href="#featured" class="cta-button">Discover Collections</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="featured">
+        <div class="container-lg">
+            <h2 class="section-title scroll-animate-left">Featured Timepieces</h2>
+            <p class="section-description scroll-animate-left">Explore our most sought-after collections, handpicked by our master craftsmen.</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 scroll-animate">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="elegance.png" class="img-fluid">
+                        </div> 
+                        <div class="product-body">
+                            <h3 class="product-title">Grand Seiko</h3>
+                            <p class="product-description">SBGY007<br> A Spring Drive gem inspired by Omiwatari.</p>
+                            <div class="product-price">$8,900</div>
+                            <button class="product-btn add-to-cart" data-name="Grand Seiko (SBGY007)" data-price="$8,900">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 scroll-animate">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="rolex.png" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">Submariner</h3>
+                            <p class="product-description">Oyster, 41 mm, Oystersteel<br>Reference 124060</p>
+                            <div class="product-price">$9,300</div>
+                            <button class="product-btn add-to-cart" data-name="Submariner" data-price="$9,300">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 scroll-animate">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="air_king.png" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">Air-King</h3>
+                            <p class="product-description">Oyster, 40 mm, Oystersteel<br>Reference 126900</p>
+                            <div class="product-price">$7,540</div>
+                            <button class="product-btn add-to-cart" data-name="Air-King" data-price="$7,540">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Banner -->
+    <div class="deals-banner scroll-animate">
+        <div class="deals-content">
+            <div class="deals-label">Limited Time Offer</div>
+            <h3 class="deals-title">Summer Sale - 25% Off</h3>
+            <p style="font-size: 18px; margin-bottom: 30px;">Use code: SUMMER25 at checkout</p>
+            <a href="#featured" class="cta-button">Shop Now</a>
+        </div>
+    </div>
+
+    <!-- Product Grid Section -->
+    <section style="background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);" id="product">
+        <div class="container-lg">
+            <h2 class="section-title scroll-animate-left">All Products</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 scroll-animate">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="datejust.png" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">Datejust 41</h3>
+                            <p class="product-description">Oyster, 41 mm, Oystersteel and white gold<br>Reference 126334</p>
+                            <div class="product-price">$10,846</div>
+                            <button class="product-btn add-to-cart" data-name="Datejust" data-price="$10,846">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 scroll-animate">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="1908.png" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">1908</h3>
+                            <p class="product-description">39 mm, platinum, polished finish<br>Reference 52506</p>
+                            <div class="product-price">$30,788</div>
+                            <button class="product-btn add-to-cart" data-name="1908" data-price="$30,788">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 scroll-animate">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="GMT.png" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">GMT-Master II</h3>
+                            <p class="product-description">Oyster, 40 mm, Everose gold<br>Reference 126715CHNR</p>
+                            <div class="product-price">$49,592</div>
+                            <button class="product-btn add-to-cart" data-name="GMT-Master II" data-price="$49,592">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 scroll-animate">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="yacht_master.png" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">Yacht-Master 40</h3>
+                            <p class="product-description">Oyster, 40 mm, Everose gold<br>Reference 126655</p>
+                            <div class="product-price">$49,796</div>
+                            <button class="product-btn add-to-cart" data-name="Yacht-Master 40" data-price="$49,796">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container-lg">
+            <h2 class="section-title scroll-animate-left">Customer Stories</h2>
+            <p class="section-description scroll-animate-left">Hear from our satisfied collectors around the world.</p>
+            
+            <div class="row">
+                <div class="col-lg-6 scroll-animate">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"The craftsmanship is absolutely phenomenal. Every detail is perfect, and I've never owned a watch this precise. Worth every penny!"</p>
+                        <div class="testimonial-author">Khalid Nelson Aguila</div>
+                        <div class="testimonial-title">Watch Collector</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 scroll-animate">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Service was impeccable. The team helped me find the perfect timepiece for my collection. Highly recommended!"</p>
+                        <div class="testimonial-author">Jose Manalo</div>
+                        <div class="testimonial-title">Luxury Enthusiast</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 scroll-animate">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"After 3 years of ownership, my Chronos still runs perfectly. The warranty service was seamless and professional."</p>
+                        <div class="testimonial-author">Jose Gregg </div>
+                        <div class="testimonial-title">Engineer</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 scroll-animate">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"An investment piece that keeps appreciating. The beauty and functionality are unmatched in this price range."</p>
+                        <div class="testimonial-author">John Paul Manalo</div>
+                        <div class="testimonial-title">Financial Advisor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container-lg">
+            <h2 class="section-title scroll-animate-left">Contact Us</h2>
+            <p class="section-description scroll-animate-left">
+                Have questions or need assistance? Our support team is here to help you choose the perfect timepiece.
+            </p>
+
+            <div class="contact-wrapper scroll-animate">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input id="name" type="text" placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Write your message"></textarea>
+                    </div>
+
+                    <button class="product-btn" style="margin-top: 10px;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 CHRONOS. All Rights Reserved.</p>
+        <p>Crafted with precision and passion.</p>
+    </footer>
+
+    <!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    // -----------------------------------------------------
+    // NAVBAR SCROLL EFFECT
+    // -----------------------------------------------------
+    window.addEventListener("scroll", function () {
+        const nav = document.querySelector("nav");
+        nav.classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    // -----------------------------------------------------
+    // SCROLL ANIMATIONS
+    // -----------------------------------------------------
+    const elements = document.querySelectorAll('.scroll-animate, .scroll-animate-left');
+
+    function animateOnScroll() {
+        elements.forEach(el => {
+            const position = el.getBoundingClientRect().top;
+            if (position < window.innerHeight - 100) {
+                el.classList.add('animate-in');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll();
+
+    // -----------------------------------------------------
+    // CART SYSTEM
+    // -----------------------------------------------------
+
+    const CART_KEY = "chronos_cart";
+
+    // Get cart
+    function getCart() {
+        try {
+            return JSON.parse(localStorage.getItem(CART_KEY)) || [];
+        } catch {
+            return [];
+        }
+    }
+
+    // Save cart
+    function saveCart(cart) {
+        localStorage.setItem(CART_KEY, JSON.stringify(cart));
+    }
+
+    // Price formatting
+    function formatPrice(value) {
+        return Number(value).toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        });
+    }
+
+    // -----------------------------------------------------
+    // ADD TO CART BUTTON HANDLER
+    // -----------------------------------------------------
+    document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("add-to-cart")) {
+            const btn = e.target;
+
+            const name = btn.dataset.name;
+            const price = Number(btn.dataset.price.replace(/[$,]/g, ''));
+
+            if (!name || !price) {
+                alert("❌ Product missing name/price!");
+                return;
+            }
+
+            let cart = getCart();
+
+            // If product already exists → increase qty
+            const existing = cart.find(item => item.name === name);
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({ name, price, qty: 1 });
+            }
+
+            saveCart(cart);
+            renderCart();
+
+            // Open modal
+            const cartModal = new bootstrap.Modal(document.getElementById("cartModal"));
+            cartModal.show();
+        }
+    });
+
+    // -----------------------------------------------------
+    // RENDER CART
+    // -----------------------------------------------------
+    function renderCart() {
+        const cart = getCart();
+        const container = document.getElementById("cart-items");
+        const totalEl = document.getElementById("cart-total");
+
+        const cartCountEl = document.getElementById("cart-count");
+        const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+        if (cartCountEl) cartCountEl.textContent = totalQty;
+
+        if (!container || !totalEl) return;
+
+        container.innerHTML = "";
+        let total = 0;
+
+        if (cart.length === 0) {
+            container.innerHTML = `<p class="text-muted">Your cart is empty.</p>`;
+        } else {
+            cart.forEach((item, i) => {
+                total += item.price * item.qty;
+
+                container.innerHTML += `
+                    <div class="cart-item d-flex justify-content-between align-items-center mb-2">
+                        <div>
+                            <strong>${item.name}</strong><br>
+                            <small>$${formatPrice(item.price)}</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="number" min="1" value="${item.qty}" 
+                                data-index="${i}" class="cart-qty form-control form-control-sm"
+                                style="width: 65px; margin-right: 10px;">
+                            
+                            <span class="me-3">$${formatPrice(item.price * item.qty)}</span>
+
+                            <button class="btn btn-sm btn-outline-danger cart-remove" data-index="${i}">
+                                Remove
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        totalEl.innerText = formatPrice(total);
+    }
+
+    // -----------------------------------------------------
+    // CHANGE QTY
+    // -----------------------------------------------------
+    document.addEventListener("input", (e) => {
+        if (e.target.classList.contains("cart-qty")) {
+            const index = Number(e.target.dataset.index);
+            let cart = getCart();
+
+            const newQty = Math.max(1, Number(e.target.value));
+            cart[index].qty = newQty;
+
+            saveCart(cart);
+            renderCart();
+        }
+    });
+
+    // -----------------------------------------------------
+    // REMOVE ITEM
+    // -----------------------------------------------------
+    document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("cart-remove")) {
+            const index = Number(e.target.dataset.index);
+            let cart = getCart();
+
+            cart.splice(index, 1);
+            saveCart(cart);
+            renderCart();
+        }
+    });
+
+    // -----------------------------------------------------
+    // CLEAR CART
+    // -----------------------------------------------------
+    document.addEventListener("click", (e) => {
+        if (e.target.id === "clear-cart") {
+            if (confirm("Clear entire cart?")) {
+                saveCart([]);
+                renderCart();
+            }
+        }
+    });
+
+    // -----------------------------------------------------
+    // INIT
+    // -----------------------------------------------------
+    document.addEventListener("DOMContentLoaded", () => {
+        renderCart();
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+    // Checkout button functionality
+        const checkoutBtn = document.getElementById("checkout-btn");
+        checkoutBtn.addEventListener("click", () => {
+            const cart = getCart(); // reuse your existing getCart() function
+            if (cart.length === 0) {
+                alert("Your cart is empty!");
+                return;
+        }
+
+        let summary = "Order Summary:\n\n";
+        let total = 0;
+
+        cart.forEach(item => {
+            summary += `${item.name} x${item.qty} = $${formatPrice(item.price * item.qty)}\n`;
+            total += item.price * item.qty;
+        });
+
+        summary += `\nTotal: $${formatPrice(total)}\n\nThank you for your purchase!`;
+
+        alert(summary);
+
+        // Clear cart after checkout
+        saveCart([]);
+        renderCart();
+
+        // Close modal
+        const cartModal = bootstrap.Modal.getInstance(document.getElementById("cartModal"));
+        cartModal.hide();
+    });
+});
+
+   
+
+</script>
+
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Your Cart</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cart-items"></div>
+                    <h4 class="mt-3">Total: ₱<span id="cart-total">0</span></h4>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" id="clear-cart">Clear Cart</button>
+                    <button class="btn btn-success" id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
